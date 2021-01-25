@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "dt",
+	"version": "${version}",
+	"name": "Damage Threshold",
+	"description": "Damage Threshold (DT) is an alternative way of reducing damage. Vanilla uses Damage Resistance (DR) which sucks. Highly recommend using NoDamI and CombatEdit with this.",
+	"authors": [
+		"Cammie"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/dt/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.cammiescorner.dt.DamageThreshold"
+		]
+	},
+	"mixins": [
+		"dt.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.11.1",
+		"minecraft": "1.16.5"
+	}
+}
