@@ -14,6 +14,6 @@ public class DamageUtilMixin
 	@Inject(method = "getDamageLeft", at = @At("HEAD"), cancellable = true)
 	private static void getDamageLeft(float damage, float armor, float armorToughness, CallbackInfoReturnable<Float> info)
 	{
-		info.setReturnValue(Math.max(1, damage - (armor / (4 - Math.min(1, armorToughness / 10)))));
+		info.setReturnValue(Math.max(0.5, damage - (armor / (3 - Math.min(2, armorToughness / 10)))));
 	}
 }
